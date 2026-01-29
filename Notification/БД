@@ -1,0 +1,8 @@
+create table notifications(
+id BIGSERIAL Primary Key,
+title VARCHAR(255) NOT NULL, -- Title
+deadline TIMESTAMP,-- Deadline
+creator_id UUID NOT NULL, -- CreatorId
+assignee_id UUID, -- AssigneeId
+ updated_at TIMESTAMP -- updatedAt
+)

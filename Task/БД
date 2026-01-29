@@ -1,0 +1,13 @@
+CREATE TABLE tasks (
+    id BIGSERIAL PRIMARY KEY,
+    creator_id UUID NOT NULL,
+    assignee_id UUID,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    status VARCHAR(50) DEFAULT 'OPEN',
+    deadline TIMESTAMP,
+    priority INTEGER,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP
+);
+
