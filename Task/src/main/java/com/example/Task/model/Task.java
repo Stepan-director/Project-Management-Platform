@@ -32,10 +32,10 @@ public class Task {
     private Integer priority;
 
     @Column(name = "created_at", nullable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();  // дата создания
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(name = "updated_at")
-    private LocalDateTime updatedAt;  // дата изменения
+    private LocalDateTime updatedAt;
 
     public Task(Long id, UUID creatorId, UUID assigneeId, String title, String description, String status, LocalDateTime deadline, Integer priority, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;

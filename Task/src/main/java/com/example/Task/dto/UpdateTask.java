@@ -13,13 +13,13 @@ public class UpdateTask {
 
     private LocalDateTime deadline;
 
-    private UUID creatorId; // другой тип
+    private UUID creatorId;
 
     private UUID assigneeId;
 
     private Integer priority;
 
-    private LocalDateTime updatedAt;  // дата изменения
+    private LocalDateTime updatedAt;
 
 
     public UpdateTask(String title, String description, String status, LocalDateTime deadline, UUID creatorId, UUID assigneeId, Integer priority, LocalDateTime updatedAt) {

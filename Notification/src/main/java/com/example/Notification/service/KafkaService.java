@@ -71,7 +71,6 @@ public class KafkaService {
 
             System.out.println("Получен запрос на удаление уведомления: " + title);
 
-            // Ищем и удаляем уведомление
             Notification notification = repository.findByTitle(title).orElse(null);
 
             if (notification != null) {
@@ -88,4 +87,3 @@ public class KafkaService {
     }
 }
 
-// хз так или нет проверить
